@@ -14,8 +14,8 @@ cmake ..
 ```
 
 ## ChangeLog
-Created repo on github with MIT licence
-Cloned to local machine with `git clone git@github.com:robertvi/cell_mesh_2.git`
-Following https://github.com/Jamagas/CMake for project structure
-Creating stubs for cmake project
+- Created repo on github with MIT licence
+- Cloned to local machine with `git clone git@github.com:robertvi/cell_mesh_2.git`
+- Following https://github.com/Jamagas/CMake for project structure
+- Creating stubs for cmake project
 
