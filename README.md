@@ -24,4 +24,5 @@ make
 - Cloned to local machine with `git clone git@github.com:robertvi/cell_mesh_2.git`
 - Following https://github.com/Jamagas/CMake and https://medium.com/swlh/c-project-structure-for-cmake-67d60135f6f5 for project structure
 - Creating stubs for cmake project
+- Stub main parses yaml config using yaml-cpp
 
