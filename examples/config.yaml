@@ -1,0 +1,4 @@
+---
+# example yaml config file
+cell_radius: [ 0.1, 1.0] #min,max
+max_cells: 100
