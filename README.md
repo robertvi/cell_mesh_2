@@ -14,7 +14,7 @@ mkdir build
 cd build
 cmake ..
 make
-./CellMesh2
+./CellMesh2 ../examples/config.yaml
 ```
 
 ## ChangeLog
