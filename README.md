@@ -3,6 +3,7 @@ A 3D model of cells growing
 
 ## Build instructions
 Dependencies:
+- developed and tested on linux
 - git
 - cmake
 - yaml-cpp (v0.6.2 of ubuntu libyaml-cpp-dev and libyaml-cpp0.6 packages used during development)
