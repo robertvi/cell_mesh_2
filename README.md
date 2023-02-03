@@ -5,7 +5,7 @@ A 3D model of cells growing
 Dependencies:
 - git
 - cmake
-- yaml-cpp >= 0.6
+- yaml-cpp (v0.6.2 of ubuntu libyaml-cpp-dev and libyaml-cpp0.6 packages used during development)
 
 ```
 git clone https://github.com/robertvi/cell_mesh_2.git
