@@ -1,4 +1,5 @@
 #include <iostream>
+#include <boost/qvm/all.hpp>
 #include <yaml-cpp/yaml.h>
 
 int main(int argc, char *argv[])

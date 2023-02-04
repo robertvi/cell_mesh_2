@@ -6,7 +6,8 @@ Dependencies:
 - developed and tested on linux
 - git
 - cmake
-- yaml-cpp (v0.6.2 of ubuntu libyaml-cpp-dev and libyaml-cpp0.6 packages used during development)
+- yaml-cpp (0.6.2)
+- boost (1.71)
 
 ```
 git clone https://github.com/robertvi/cell_mesh_2.git
@@ -25,4 +26,4 @@ make
 - Following https://github.com/Jamagas/CMake and https://medium.com/swlh/c-project-structure-for-cmake-67d60135f6f5 for project structure
 - Creating stubs for cmake project
 - Stub main parses yaml config using yaml-cpp
-
+- Included boost qvm
