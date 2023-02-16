@@ -1,5 +1,5 @@
 ## Aims
-The metabolism part of CellMesh2 provides a simple accounting system for matter and energy, allowing the total mass in the system to be conserved and for energy to enter the system through photosynthesis, to pass between cells via feeding and to leave it through various lose mechanisms.
+The metabolism part of CellMesh2 provides a simple accounting system for matter and energy, allowing the total mass in the system to be conserved and for energy to enter the system through photosynthesis, to pass between cells via feeding and to leave it through various loss mechanisms.
 
 ## The Basic Model
 The environment contains a diffusible monomer chemical building block which cells can absorb and build up into polymer chains of any length. The total mass in the system, including as monomer, dimer, trimer and larger forms, is conserved. Free monomer is spread out evenly as a global supply available to all cells, which is consumed when cells bond them together into larger molecules and increases when those larger molecules are broken down again. A polymer chain of any length can be built up by adding additional monomers to an existing chain. Only monomers freely diffuse, everything else, from dimer and above, are contained within individual cells as explicitly modelled quantities.
