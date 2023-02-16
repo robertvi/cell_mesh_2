@@ -8,9 +8,9 @@ Dependencies:
 - cmake
 - yaml-cpp (0.6.2)
 - boost (1.71)
+- includes a copy of doctest.h [Copyright](https://github.com/doctest/doctest/blob/master/LICENSE.txt) (c) 2016-2021 Viktor Kirilov 
 
-Includes a builtin release of doctest.h [Copyright](https://github.com/doctest/doctest/blob/master/LICENSE.txt) (c) 2016-2021 Viktor Kirilov 
-
+Build instructions:
 ```
 git clone https://github.com/robertvi/cell_mesh_2.git
 cd cell_mesh_2
