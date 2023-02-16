@@ -1,3 +1,5 @@
+#include "cell.h"
+
 #include <iostream>
 #include <boost/qvm/all.hpp>
 #include <yaml-cpp/yaml.h>
@@ -16,6 +18,9 @@ int main(int argc, char *argv[])
     std::cout << "main" << std::endl;
 
     std::cout << config << std::endl;
+
+    Cell c({1,2,4});
+    c.show();
 
     return 0;    
 }
