@@ -9,17 +9,24 @@ Dependencies:
 - yaml-cpp (0.6.2)
 - boost (1.71)
 
+Includes a builtin release of doctest.h [Copyright](https://github.com/doctest/doctest/blob/master/LICENSE.txt) (c) 2016-2021 Viktor Kirilov 
+
 ```
 git clone https://github.com/robertvi/cell_mesh_2.git
 cd cell_mesh_2
 mkdir build
 cd build
 cmake ..
-make
+make -j
+./CellMesh2 --doctest
 ./CellMesh2 ../examples/config.yaml
 ```
 
 ## ChangeLog
+2023-02-16
+- Stub Cell class using a boost::qvm vector as a placeholder variable
+- Incorporated doctest as a testing framework
+
 2023-02-03
 - Created repo on github with MIT licence
 - Cloned to local machine with `git clone git@github.com:robertvi/cell_mesh_2.git`
