@@ -3,13 +3,30 @@
 
 #include "qvm_cm2.h"
 
-class Cell
+/*
+basic 3D cell with position and radius
+*/
+class BasicCell
 {
     public:
-        Cell(const vec3&);
-        void show();
+        BasicCell(const vec3&,const real&);
+        virtual ~BasicCell();
+        virtual void show();
     private:
         vec3 pos;
+        real rad;
+};
+
+/*
+the actual Cell class that you instantiate
+inheriting/containing all the required classes
+*/
+class Cell: public BasicCell
+{
+    public:
+        Cell(const vec3&,const real&);
+        ~Cell();
+        void show();
 };
 
 #endif

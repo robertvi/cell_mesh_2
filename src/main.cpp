@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 
     std::cout << config << std::endl;
 
-    Cell c({1,2,4});
+    Cell c({1.2,2.3,4.5},0.5);
     c.show();
 
     return 0;    

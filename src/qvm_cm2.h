@@ -3,8 +3,11 @@
 
 #include <boost/qvm/all.hpp>
 
+//define floating point datatype
+typedef double real;
+
 //define 3D vector class
-typedef boost::qvm::vec<double,3> vec3;
+typedef boost::qvm::vec<real,3> vec3;
 
 std::ostream& operator<< (std::ostream&,const vec3&);
 
