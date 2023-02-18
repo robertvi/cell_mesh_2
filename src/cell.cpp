@@ -4,40 +4,63 @@
 
 #include "doctest.h"
 
-BasicCell::BasicCell(const vec3&_pos,const real&_rad)
-:pos(_pos),rad(_rad)
-{
-    std::cout << "BasicCell" << std::endl;
-}
-
-BasicCell::~BasicCell()
-{
-    std::cout << "~BasicCell" << std::endl;
-}
-
-void BasicCell::show()
-{
-    std::cout << "pos=" << pos << std::endl;
-    std::cout << "rad=" << rad << std::endl;
-}
-
-TEST_CASE("testing Cell source file")
+TEST_CASE("Cell source file")
 {
     CHECK(1 == 1);
 }
 
-Cell::Cell(const vec3&_pos,const real&_rad)
-:BasicCell(_pos,_rad)
+BasicCell::BasicCell()
 {
-    std::cout << "Cell" << std::endl;
+}
+
+BasicCell::~BasicCell()
+{
+}
+
+void BasicCell::setBasicCell(const vec3&_pos,const real&_rad)
+{
+    pos = _pos;
+    rad = _rad;
+}
+
+void BasicCell::show()
+{
+    std::cout << "BasicCell" << std::endl;
+    std::cout << "pos=" << pos << std::endl;
+    std::cout << "rad=" << rad << std::endl;
+}
+
+Metabolism::Metabolism()
+{}
+
+Metabolism::~Metabolism()
+{}
+
+void Metabolism::setMetabolism(const uint64_t&_dimer,const uint64_t&_trimer,const uint64_t&_store)
+{
+    dimer = _dimer;
+    trimer = _trimer;
+    store = _store;
+}
+
+void Metabolism::show()
+{
+    std::cout << "Metabolism" << std::endl;
+    std::cout << "dimer=" << dimer << std::endl;
+    std::cout << "trimer=" << trimer << std::endl;
+    std::cout << "storage=" << store << std::endl;
+}
+
+Cell::Cell()
+{
 }
 
 Cell::~Cell()
 {
-    std::cout << "~Cell" << std::endl;
 }
 
 void Cell::show()
 {
     BasicCell::show();
+    Metabolism::show();
 }

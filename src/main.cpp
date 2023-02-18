@@ -36,8 +36,10 @@ int main(int argc, char *argv[])
 
     std::cout << config << std::endl;
 
-    Cell c({1.2,2.3,4.5},0.5);
+    Cell c;
+    c.setBasicCell({1.2,2.3,4.5},0.5);
+    c.setMetabolism(123,345,567);
     c.show();
 
-    return 0;    
+    return 0;
 }
