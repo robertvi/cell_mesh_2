@@ -2,5 +2,5 @@
 # example yaml config file
 cell_radius: [ 0.1, 1.0] #min,max
 max_cells: 100
-num_steps: 1000000000
+num_steps: 1000000
 num_threads: 16
