@@ -1,4 +1,5 @@
 #include "cell.h"
+#include "openmp.h"
 
 #include <iostream>
 #include <string>
@@ -32,14 +33,12 @@ int main(int argc, char *argv[])
     //load yaml config
     YAML::Node config = YAML::LoadFile(argv[1]);
 
-    std::cout << "main" << std::endl;
-
-    std::cout << config << std::endl;
-
     Cell c;
     c.setBasicCell({1.2,2.3,4.5},0.5);
     c.setMetabolism(123,345,567);
-    c.show();
+    //c.show();
+
+    //test_openmp(config["num_steps"].as<uint64_t>(),config["num_threads"].as<int>());
 
     return 0;
 }

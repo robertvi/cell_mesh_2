@@ -1,5 +1,7 @@
 #include "qvm_cm2.h"
 
+#include "doctest.h"
+
 using namespace boost::qvm;
 using namespace std;
 
