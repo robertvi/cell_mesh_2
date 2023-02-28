@@ -31,7 +31,7 @@ An organelle denoted `O` of mass `n` monomers can be thought of as a linear poly
 
   O<sub>n</sub> + M<sub>3</sub> &rarr; O<sub>n+1</sub> + 2 M
 
-For simplicity we can allow `n >= 0`, ie the organelle can have zero mass to begin with. Logically if `n=0` there is nothing for the first monomer to be bonded to, but this doesn't violate conservation of mass as such, and avoids the need to define a special purpose reaction to create the very first monomer of the organelle.
+For simplicity we can allow `n >= 0`, ie the organelle can have zero mass to begin with. Logically if `n=0` there is nothing for the first monomer to be bonded to, but this doesn't violate conservation of mass as such, and avoids the need to define a special purpose reaction to create the very first monomer of the organelle. In effect the first monomer forms a magic bond to nothing.
 
 ## Monomer, Dimer and Trimer Release
 An organelle can decay to release a single monomer, dimer or trimer:
