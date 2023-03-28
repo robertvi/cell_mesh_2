@@ -12,18 +12,15 @@ In this reaction a base monomer and a photon convert into an active monomer:
 
  M + photon &rarr; M*
 
-
 ## Monomer Decay
 An active monomer can spontaneously decay into a base monomer:
 
  M* &rarr; M
 
 ## Organelle Growth
-An organelle denoted `O` of mass `n` monomers can be thought of as a linear polymer chain of `n` monomer subunits. To attach one new monomer we must create one new bond, therefore we must also break at least two other bonds in order for the reaction to be allowed, therefore a trimer must be fully broken down and only one monomer added to the organelle:
+An organelle, denoted `O`, initially containing `n` monomers and therefore having a mass of `n` units, consumes one active monomer and increases its mass by one unit:
 
-  O<sub>n</sub> + M<sub>3</sub> &rarr; O<sub>n+1</sub> + 2 M
-
-For simplicity we can allow `n >= 0`, ie the organelle can have zero mass to begin with. Logically if `n=0` there is nothing for the first monomer to be bonded to, but this doesn't violate conservation of mass as such, and avoids the need to define a special purpose reaction to create the very first monomer of the organelle. In effect the first monomer forms a magic bond to nothing.
+  O<sub>n</sub> + M* &rarr; O<sub>n+1</sub>
 
 ## Monomer, Dimer and Trimer Release
 An organelle can decay to release a single monomer, dimer or trimer:
