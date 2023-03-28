@@ -21,6 +21,8 @@ An organelle, denoted `O`, initially containing `n` monomers and therefore havin
 
   O<sub>n</sub> + M* &rarr; O<sub>n+1</sub>
 
+where `n >= 0`.
+
 ## Organelle Decay
 An organelle can decay by releasing a single monomer:
 
