@@ -22,17 +22,10 @@ An organelle, denoted `O`, initially containing `n` monomers and therefore havin
 
   O<sub>n</sub> + M* &rarr; O<sub>n+1</sub>
 
-## Monomer, Dimer and Trimer Release
-An organelle can decay to release a single monomer, dimer or trimer:
+## Organelle Decay
+An organelle can decay by releasing a single monomer:
 
   O<sub>n</sub> &rarr; O<sub>n-1</sub> + M
 
-where `n >= 1`
+where `n >= 1`.
 
-  O<sub>n</sub> &rarr; O<sub>n-2</sub> + M<sub>2</sub>
-
-where `n >= 2`
-
-  O<sub>n</sub> &rarr; O<sub>n-3</sub> + M<sub>3</sub>
-
-where `n >= 3`.
