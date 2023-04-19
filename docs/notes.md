@@ -36,16 +36,16 @@ and presumably we want the energy released per monomer upon organelle breakdown 
 therefore organelles still contain some energy which can be released by breaking it down
 but always less active monomer is released than was put in to build it
 
-## organelle mass O, surface area SA:
-
+## organelle mass O, surface area SA
+```
   dO/dt = (growth_effort - spontaneous_decay_rate) * SA
   SA = O^(2/3) #since O = r^3 and SA = r^2 ?????
-
+```
 ## effect on mass of active monomer A and base monomer B
-
+```
   dA/dt += -dO/dt * p        } or p' ( < p ) if dO/dt is negative
   dB/dt += -dO/dt * (1 - p)  }
-
+```
 if A or B run out we can simply kill the cell
 
 it seems that the maintenance cost can be implemented by simply having a spontaneous decay rate
@@ -63,12 +63,12 @@ decay could also be limited to the organelle surface
 growth effort can be negative in order to actively release the stored monomers
 
 ## spontaneous decay of active to base monomer
-
+```
   dA/dt -= spontaneous_decay_rate * A
   dB/dt += spontaneous_decay_rate * A
-
+```
 ## photosynthesis, with organelle of surface area SA
-
+```
   dA/dt += photon_rate * SA
   dB/dt -= photon_rate * SA
-
+```
