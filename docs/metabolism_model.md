@@ -30,3 +30,5 @@ An organelle can decay by releasing a single monomer:
 
 where `n >= 1`.
 
+## Monomer Management and Sensing
+Cells are assumed to have separate compartments for base and active monomer and to be able to deliver active or base monomer to any organelle that requires it through a transport system. Therefore the concentration of available base and active monomer do not vary as such. However the cell needs to be able to sense how much of the monomers it has, therefore internal sensory inputs should be provided giving the absolute amount or the amount relative to the cell's total volume.
