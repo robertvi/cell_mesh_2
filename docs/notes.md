@@ -39,7 +39,7 @@ but always less active monomer is released than was put in to build it
 ## organelle mass O, surface area SA
 ```
   dO/dt = (growth_effort - spontaneous_decay_rate) * SA
-  SA = O^(2/3) #since O = r^3 and SA = r^2 ?????
+  SA = O^(2/3) #since O = r^3 and SA = r^2
 ```
 ## effect on mass of active monomer A and base monomer B
 ```
@@ -72,3 +72,22 @@ growth effort can be negative in order to actively release the stored monomers
   dA/dt += photon_rate * SA
   dB/dt -= photon_rate * SA
 ```
+
+## maybe odeint for the solver, can use cuda
+http://headmyshoulder.github.io/odeint-v2/highlights.html
+https://thrust.github.io/
+https://docs.nvidia.com/cuda/thrust/index.html
+https://headmyshoulder.github.io/odeint-v2/doc/boost_numeric_odeint/tutorial/using_cuda__or_openmp__tbb_______via_thrust.html
+https://github.com/headmyshoulder/odeint-v2
+
+https://www.codeproject.com/Articles/268589/odeint-v2-Solving-ordinary-differential-equations
+https://www.boost.org/doc/libs/1_74_0/libs/numeric/odeint/doc/html/boost_numeric_odeint/tutorial/all_examples.html
+https://github.com/headmyshoulder/odeint-v2/blob/master/examples/mtl/implicit_euler_mtl.cpp
+
+## core model
+probably best to focus on core of the model as an individual agent not an embedded GA
+simple limit on total cell volume in the individual
+could freeze the shape/synapses and convert into a rigid body after a development period
+key is to make if fast to run using cuda, able to support interest dynamics/shapes, and be dynamically stable
+and avoid the explosions I got due to cell divisions creating compressed springs which were introducing
+more and more energy into the system
